@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#F0DCA9">
+
+    <TextView
+        android:id="@+id/searchTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Search And Browse"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/categoryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Select Category:"
+            android:textColor="#181717"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/categorySP"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="#F8EDC9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:text="Price:"
+            android:textColor="#181717"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/priceRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/lessThan50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt; 50"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio50to100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 - 100"
+                android:layout_marginStart="12dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/greaterThan100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&gt; 100"
+                android:layout_marginStart="12dp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/handmadeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toy Type:"
+            android:textSize="18sp"
+            android:textColor="#181717"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:id="@+id/handmadeCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Handmade"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/machinemadeCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Machine"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/filterBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#CC6443" />
+
+        <Button
+            android:id="@+id/resetBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#CC6443"
+            android:text="Reset"/>
+
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/toysLV"
+        android:layout_width="358dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
